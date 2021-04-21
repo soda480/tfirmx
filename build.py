@@ -28,5 +28,5 @@ def set_properties(project):
     project.depends_on_requirements('requirements.txt')
     project.depends_on_requirements('requirements-build.txt')
     project.set_property('anybadge_add_to_readme', True)
-    project.set_property('distutils_console_scripts',
-        ['tfirmx = tfirmx.cli:main'])
+    project.set_property('distutils_console_scripts', ['tfirmx = tfirmx.cli:main'])
+    project.set_property('anybadge_use_shields', True)
