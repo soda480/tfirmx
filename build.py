@@ -13,7 +13,14 @@ use_plugin('pypi:pybuilder_anybadge')
 
 name = 'tfirmx'
 version = '0.1.0'
-default_task = ['clean', 'publish', 'radon', 'bandit', 'anybadge']
+default_task = [
+    'clean',
+    'analyze',
+    'publish',
+    'radon',
+    'bandit',
+    'anybadge'
+]
 
 
 @init
@@ -28,5 +35,5 @@ def set_properties(project):
     project.depends_on_requirements('requirements.txt')
     project.depends_on_requirements('requirements-build.txt')
     project.set_property('anybadge_add_to_readme', True)
-    project.set_property('distutils_console_scripts',
-        ['tfirmx = tfirmx.cli:main'])
+    project.set_property('distutils_console_scripts', ['tfirmx = tfirmx.cli:main'])
+    project.set_property('anybadge_use_shields', True)
