@@ -5,12 +5,16 @@ from pybuilder.core import init
 use_plugin('python.core')
 use_plugin('python.flake8')
 use_plugin('python.unittest')
-# use_plugin('python.coverage')
-# use_plugin('python.distutils')
+use_plugin('python.coverage')
+use_plugin('python.distutils')
 
 name = 'tfirmx'
 version = '0.1.0'
-default_task = ['clean', 'analyze', 'publish']
+default_task = [
+    'clean',
+    'analyze',
+    'publish'
+]
 
 
 @init
