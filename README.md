@@ -7,7 +7,7 @@
 
 ## Execution
 
-Clone the repository and ensure the latest version of Docker is installed on your development server.
+Ensure the latest version of Docker is installed on your server.
 
 Build the Docker image:
 ```sh
@@ -20,6 +20,8 @@ docker container run --rm -it tfirmx:latest
 ```
 
 ## Development
+
+Clone the repository and ensure the latest version of Docker is installed on your server.
 
 Build the Docker image:
 ```sh
