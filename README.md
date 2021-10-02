@@ -10,37 +10,24 @@ Clone the repository and ensure the latest version of Docker is installed on you
 
 Build the Docker image:
 ```sh
-docker image build \
--t \
-tfirmx:latest .
+docker image build -t tfirmx:latest .
 ```
 
 Run the Docker container:
 ```sh
-docker container run \
---rm \
--it \
-tfirmx:latest
+docker container run --rm -it tfirmx:latest
 ```
 
 ## Development
 
 Build the Docker image:
 ```sh
-docker image build \
---target build-image \
--t \
-tfirmx:latest .
+docker image build --target build-image -t tfirmx:latest .
 ```
 
 Run the Docker container:
 ```sh
-docker container run \
---rm \
--it \
--v $PWD:/code \
-tfirmx:latest \
-/bin/bash
+docker container run --rm -it -v $PWD:/code tfirmx:latest /bin/bash
 ```
 
 Execute the build:
